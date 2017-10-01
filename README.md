@@ -96,10 +96,10 @@ TBD
 
 ## Built With
 
-* [Vagrant](http://www.dropwizard.io/1.0.2/docs/)
-* [PostgreSQL](https://rometools.github.io/rome/)
-* [Flask](https://maven.apache.org/)
-* [SqlAlchemy](https://rometools.github.io/rome/)
+* [Vagrant](https://www.vagrantup.com/)
+* [PostgreSQL](https://www.postgresql.org/)
+* [Flask](http://flask.pocoo.org/)
+* [SqlAlchemy](https://www.sqlalchemy.org/)
 
 ## Contributing
 
