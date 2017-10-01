@@ -53,12 +53,6 @@ def upgrade():
                               sa.sql.column('id', sa.Integer),
                               sa.sql.column('name', sa.String)
                               )
-    user_table = sa.sql.table('user',
-                              sa.sql.column('id', sa.Integer),
-                              sa.sql.column('email', sa.String),
-                              sa.sql.column('password', sa.String),
-                              sa.sql.column('role_id', sa.ForeignKey)
-                              )
     op.bulk_insert(role_table,
                    [
                        {'id': 1, 'name': 'Admin'},
@@ -66,13 +60,6 @@ def upgrade():
                        {'id': 3, 'name': 'User'},
                    ]
                    )
-    op.bulk_insert(user_table,
-                   [
-                       {'id': 1,
-                        'email': 'admin@maildrop.cc',
-                        'password': '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918',
-                        'role_id': 1}
-                   ])
     # ### end Alembic commands ###
 
 

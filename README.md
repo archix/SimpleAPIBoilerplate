@@ -59,6 +59,19 @@ You can check if app's running by visiting next link:
 
 [http://192.168.55.56:5000/api/](http://192.168.55.56:5000/api/)
 
+Default admin user should already be created try /login/ using next credentials via cURL:
+
+```
+curl -X POST \
+  http://192.168.55.56:5000/api/login/ \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -d '{
+        "email": "admin@maildrop.cc",
+        "password": "admin"
+}'
+```
+
 ## Docs
 
 To see docs visit next link:
