@@ -1,0 +1,2 @@
+CREATE USER admin WITH PASSWORD 'admin';
+CREATE DATABASE test_api OWNER admin;
